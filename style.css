@@ -1,11 +1,11 @@
 body {
     display: flex;
-    flex-direction : column;
-    align-items : center;
-    justify-content : center;
-    height : 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
     background-color: antiquewhite;
-    text-align : center;
+    text-align: center;
 }
 
 #Game-arena {
@@ -18,23 +18,40 @@ body {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
-#score-board{
+#score-board {
     font-size: x-large;
     font-weight: bold;
     color: black;
     margin: 10px 0;
-     
 }
 
-.start-button{
+.start-button {
     background-color: orangered;
-    text-color: white;
+    color: white;
     padding: 15px 30px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 4px 0;
+    border: none;
     cursor: pointer;
-    border-radius: 6px;
-     
+    font-size: large;
+    border-radius: 5px;
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: limegreen;
+    position: absolute;
+}
+
+.food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
+
+#snake-game {
+    display : flex;
+    font-size : x-large;
+    color : black;
+    font-weight : bold;
 }
