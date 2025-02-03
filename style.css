@@ -35,23 +35,35 @@ body {
     border-radius: 5px;
 }
 
-.snake {
-    width: 20px;
-    height: 20px;
-    background-color: limegreen;
-    position: absolute;
-}
-
-.food {
-    width: 20px;
-    height: 20px;
-    background-color: red;
-    position: absolute;
-}
-
 #snake-game {
     display : flex;
     font-size : x-large;
     color : black;
     font-weight : bold;
+}
+
+
+.food{
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+    border-radius: 50%;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+
+}
+
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+    border-radius: 50%;
 }
