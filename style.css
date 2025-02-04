@@ -8,7 +8,7 @@ body {
     text-align: center;
 }
 
-#Game-arena {
+#game-arena {
     width: 600px;
     height: 600px;
     background-color: #333;
@@ -29,21 +29,16 @@ body {
     background-color: orangered;
     color: white;
     padding: 15px 30px;
-    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 4px 0;
     cursor: pointer;
-    font-size: large;
-    border-radius: 5px;
+    border: none;
+    border-radius: 6px;
 }
 
-#snake-game {
-    display : flex;
-    font-size : x-large;
-    color : black;
-    font-weight : bold;
-}
-
-
-.food{
+.food {
     width: 20px;
     height: 20px;
     background-color: red;
@@ -56,14 +51,20 @@ body {
     50% {
         opacity: 0.5;
     }
-
 }
-
 
 .snake {
     width: 20px;
     height: 20px;
-    background-color: green;
+    background-color: chartreuse;
     position: absolute;
-    border-radius: 50%;
+    border-radius: 5px;
+}
+
+#Snake-game{
+    display: flex;
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    margin: 10px 0;
 }
